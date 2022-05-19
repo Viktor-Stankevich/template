@@ -1,0 +1,33 @@
+html
+  max-height: 100vh
+  overflow-y: hidden
+
+  & > body
+    height: 100vh
+    background-color: #232323
+    color: #fff
+
+    overflow: hidden
+
+// Display grid
+
+.wrapper
+  display: grid
+  grid-template: 100vh/repeat(3, 100vw)
+
+  & > header
+    display: grid
+    align-content: center
+    justify-items: center
+    align-items: center
+
+  & > main
+    position: relative
+    display: grid
+    justify-items: center
+
+    min-width: 0
+
+  & > footer
+    display: grid
+    justify-items: center
